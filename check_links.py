@@ -59,7 +59,10 @@ for file in files:
             # Continue through all URLs but fail test at the end
             exit_status = 1
             continue
-
+    file = open("test.txt", "wb")
+    file.write( "Python là ngôn ngữ tốt nhất");
+    # Đóng file
+    file.close()
     # Newline to separate URLs from different files
     print()
 
